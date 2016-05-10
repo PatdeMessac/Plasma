@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset ="UTF8">
+		<title>Le Pouvoir Secret du Cristal de Carbure d'Adamantium</title>
+	</head>
+
+	<body>
+
+<p>En l'an de grâce 2134, aux confins de la  <br /> galaxie un homme seul avait perdu tout <br/> espoir de retour. Toute sa vie se résumait <br/> finalement en un mot : In Coding Venenum</p>
+
+<button onclick="myFunction()">Cliquez pour voir un exemple<br/>  de distortion temporelle dans la fenêtre <br/> espace temps située devant vos yeux</button>
+
+<p id="demo"></p>
+
+		<script>
+				var choixUtilisateur = prompt("Choisissez-vous pierre, feuille, ciseaux ou FUSIL PLASMA ?");
+				var choixOrdi = Math.random(); //random = aléatoire
+				if (choixOrdi < 0.25) { //1/4 : 4 valeurs avec Fusil Plasma !
+				choixOrdi = "pierre";
+			} else if (choixOrdi < 0.50) {
+				choixOrdi = "feuille";
+			} else if (choixOrdi < 0.75) {
+			    choixOrdi = "FUSIL PLASMA";
+			} else {
+				choixOrdi = "ciseaux";
+			} console.log("Ordinateur : " + choixOrdi);
+			var comparer = function (choix1, choix2) {
+			if (choix1 === choix2) {		// attention 3 signes =
+			return "Liberté ? Un rêve inaccessible... Fraternité ? Pas simple avec la mixité ... Egalité ! C'Est Gagné comme disait Dorra l'exploratrice, mais la réalité est bien cruelle : c'est un match nul !!! ";
+			    }
+			else if (choix1 === "pierre") {
+			    if (choix2 === "ciseaux") {
+			        return "pierre gagne !";
+			    }    else {
+			        return "feuille gagne !";
+			    }
+			}    
+			else if (choix1 === "feuille") {
+			    if (choix2 === "pierre") {
+			        return "feuille gagne !"; 
+			    }    else {
+			        return "ciseaux gagnent !";
+			    }
+			}
+			else if (choix1 === "ciseaux") {
+			    if (choix2 === "pierre") {
+			        return "feuille gagne !"; 
+			    }    else {
+			        return "ciseaux gagnent !";
+			    }
+			}
+			else if (choix1 === "FUSIL PLASMA") {
+			    if (choix2 === "pierre") {
+			        return "FUSIL PLASMA GAGNE TOUJOURS !"; 
+			    }    else {
+			        return "FUSIL PLASMA GAGNE VRAIMENT TOUJOURS, t'avais un doute ?";
+			    }
+			}
+			};
+			prompt(choixUtilisateur, choixOrdi);
+		</script>
+	</body>
+</html>
