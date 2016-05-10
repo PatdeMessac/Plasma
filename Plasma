@@ -58,7 +58,7 @@
 			    }
 			}
 			};
-			prompt(choixUtilisateur, choixOrdi);
+			prompt(choixOrdi, comparer(choixUtilisateur, choixOrdi));
 		</script>
 	</body>
 </html>
